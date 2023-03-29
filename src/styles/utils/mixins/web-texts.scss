@@ -1,0 +1,10 @@
+@import "../mixins/media";
+
+@mixin web-text-default {
+  font-family: $font-text;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
