@@ -1,19 +1,5 @@
 @import "../utils/import-mixin-and-var-scss";
-$sidebar-width: 380px;
-$grid-space: $max-width - ($screen-gap * 2);
-$grid-gap-desktop: 20px;
-$grid-gap-mobile: 8px;
-$grid-gap: 16px;
 
-.section {
-  padding: 48px 0;
-  @include media-laptop-down() {
-    padding: 32px 0;
-  }
-  @include media-tablet-down() {
-    padding: 24px 0;
-  }
-}
 .wr-section {
   max-width: $max-width;
   margin: 0 auto;
