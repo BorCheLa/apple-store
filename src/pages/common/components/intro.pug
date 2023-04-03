@@ -1,0 +1,8 @@
+mixin Intro(data)
+  section.intro
+    .wr-section
+      .intro__text-wr#introTextWrapper
+        p.intro__text!=data.text
+        a#introMoreButton.intro__more more
+      a.intro__author(src=data.authorLink)=data.author
+      p.intro__job=data.job

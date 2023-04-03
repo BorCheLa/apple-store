@@ -1,0 +1,38 @@
+@import "../../utils/import-mixin-and-var-scss";
+
+.intro {
+  padding-bottom: 32px;
+  &__text {
+    line-height: 1.4;
+    font-family: -apple-system,BlinkMacSystemFont,Arial,sans-serif;
+    white-space: pre-line;
+  }
+  &__text-wr {
+    position: relative;
+    overflow: hidden;
+    height: 82px;
+    margin-bottom: 32px;
+    &.full {
+      height: auto;
+    }
+  }
+  &__author {
+    text-decoration: none;
+  }
+  &__job {
+    color: $color-text-grey;
+    margin-top: 3px;
+    font-size: 11px;
+  }
+  &__more {
+    position: absolute;
+    cursor: pointer;
+    padding: 3px 3px 3px 30px;
+    color: $color-text-link;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 100%);
+    bottom: -4px;
+    right: 0;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
