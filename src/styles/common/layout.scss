@@ -5,3 +5,14 @@
   margin: 0 auto;
   padding: 0 $screen-gap;
 }
+
+.separator,
+.separator-full {
+  border-bottom: 0.5px solid #d6d6d6;
+  display: block;
+  height: 0;
+  margin: 12px 0;
+}
+.separator-full {
+  margin: 12px $screen-gap;
+}

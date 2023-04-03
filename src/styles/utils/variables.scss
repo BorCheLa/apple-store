@@ -12,15 +12,22 @@ $xl: 1919px;
 $_red: #ff0000;
 $_white: #ffffff;
 $_black: #000000;
-$_blue: #0000ff;
-$_grey: #eeeeee;
+$_blue: #267ff9;
+$_blue2: #007aff;
+$_grey: #8e8e93;
+$_grey-light: #b1b1b4;
 
 // ABSTRACT-COLORS - USE this variables on templates
 $color-main: $_red;
 $color-text: $_black;
+$color-text-white: $_white;
+$color-text-grey: $_grey;
+$color-text-grey-light: $_grey-light;
+$color-button: $_blue2;
 $color-text-link: $_blue;
 $color-text-link-hover: $_black;
 $color-background: $_grey;
 
 // FONTS
 $font-text: "Inter", sans-serif;
+$font-text2: "Arial Rounded MT Bold", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;

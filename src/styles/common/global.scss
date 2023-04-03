@@ -17,6 +17,7 @@ body.disable-scroll {
   display: flex;
   flex-direction: column;
   color: $color-text;
+  padding: 20px 0;
   @include web-text-default();
 
   main {
