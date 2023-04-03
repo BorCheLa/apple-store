@@ -1,0 +1,10 @@
+mixin Gallery()
+  section.gallery
+    ul.gallery__list.scroll-h
+      each item in [1,2,3,4,5,6]
+        li.gallery__item
+          img.gallery__image(src='img/'+ item + '.jpeg', alt='gallery')
+    .gallery__bottom
+      svg.gallery__icon(role="img")
+        use(xlink:href="img/sprite-svg.svg#iphone")
+      p.gallery__text iPhone

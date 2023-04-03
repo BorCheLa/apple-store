@@ -16,3 +16,15 @@
 .separator-full {
   margin: 12px $screen-gap;
 }
+
+.scroll-h {
+  max-width: 100%;
+  overflow: auto;
+  display: flex;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}

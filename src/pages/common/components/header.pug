@@ -9,7 +9,7 @@ mixin Header(data)
             p.header__subtitle=data.subtitle
           a.header__link(href=data.button.url)=data.button.name
       .separator
-      ul.header__list
+      ul.header__list.scroll-h
         each item, index in data.items
           li.header__item
             p.header__name=item.title

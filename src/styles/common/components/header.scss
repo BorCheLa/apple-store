@@ -48,16 +48,7 @@
   }
 
   &__list {
-    max-width: 100%;
-    overflow: auto;
-    display: flex;
     padding-bottom: 5px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-      width: 0;
-      height: 0;
-    }
   }
   &__item {
     padding: 0 2px;
