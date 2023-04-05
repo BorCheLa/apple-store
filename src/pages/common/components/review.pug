@@ -1,0 +1,19 @@
+mixin Review(data)
+  section.review
+    .wr-section
+      p.title=data.title
+      .rating
+        .rating__info
+          p.rating__number=data.rating.number
+          p.rating__count=data.rating.max
+        .rating__details
+          ul.rating__graph
+            each item, index in data.rating.items
+              li.rating__item
+                .rating__star
+                  each star in Array(5 - index)
+                    svg.rating__icon(role="img")
+                      use(xlink:href="img/sprite-svg.svg#star-grey")
+                .rating__line
+                    .rating__fill(style='width: ' + item + '%')
+          .rating__counter 90 Reviews

@@ -8,13 +8,13 @@ mixin Header(data)
             h1.header__title=data.title
             p.header__subtitle=data.subtitle
           a.header__link(href=data.button.url)=data.button.name
-      .separator
-      ul.header__list.scroll-h
-        each item, index in data.items
-          li.header__item
-            p.header__name=item.title
-            p.header__content!=item.content
-            if item.subtitle
-              p.header__subname!=item.subtitle
-          if index + 1 < data.items.length
-            li.header__separator
+    .separator-full
+    ul.header__list.scroll-h
+      each item, index in data.items
+        li.header__item
+          p.header__name=item.title
+          p.header__content!=item.content
+          if item.subtitle
+            p.header__subname!=item.subtitle
+        if index + 1 < data.items.length
+          li.header__separator

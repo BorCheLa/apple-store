@@ -1,0 +1,67 @@
+@import "../../utils/import-mixin-and-var-scss";
+
+.rating {
+  display: flex;
+  align-items: flex-end;
+  &__info {
+    width: 90px;
+    min-width: 90px;
+    margin-right: 5px;
+    text-align: center;
+  }
+  &__number {
+    font-family: $font-text2;
+    font-size: 60px;
+    font-weight: 700;
+    color: #4a4a4e
+  }
+  &__count {
+    font-family: $font-text2;
+    font-size: 14px;
+    color: $color-text-grey
+  }
+  &__details {
+    flex-grow: 1;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    & + & {
+      margin-top: 2px;
+    }
+  }
+  &__star {
+    width: 45px;
+    min-width: 45px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &__icon {
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+  }
+  &__line {
+    flex-grow: 1;
+    margin-left: 10px;
+    height: 4px;
+    background-color: #efefef;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: #8e8e93;
+  }
+  &__counter {
+    color: $color-text-grey;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: right;
+  }
+}
