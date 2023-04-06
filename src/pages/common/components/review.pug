@@ -30,4 +30,5 @@ mixin Review(data)
               p.review__author=item.author
             .review__text-wr
               p.review__text!=item.text
-              a.reviewMoreButton.review__more more
+              if item.isMore
+                a.reviewMoreButton.review__more more

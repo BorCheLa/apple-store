@@ -69,12 +69,14 @@
   padding: 15px 0;
   &__item {
     flex-grow: 1;
-    width: 83vw;
-    min-width: 83vw;
-    max-width: 83vw;
+    width: calc(100vw - 50px);
+    min-width: calc(100vw - 70px);
+    max-width: calc(100vw - 70px);
     padding: 14px 20px;
     background-color: #f2f2f6;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
     & + & {
       margin-left: 20px;
     }
@@ -101,7 +103,8 @@
   }
   &__text-wr {
     position: relative;
-    height: 150px;
+    min-height: 150px;
+    flex-grow: 1;
     overflow: hidden;
     &.full {
       height: auto;

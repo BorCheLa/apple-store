@@ -26,7 +26,25 @@
       {
         title: '90  Ratings',
         content: '4.4',
-        subtitle: '!!!stars'
+        subtitle: `<svg class="header__star" role="img">
+                     <use xlink:href="img/sprite-svg.svg#star-grey"></use>
+                   </svg><svg class="header__star" role="img">
+                     <use xlink:href="img/sprite-svg.svg#star-grey"></use>
+                   </svg><svg class="header__star" role="img">
+                     <use xlink:href="img/sprite-svg.svg#star-grey"></use>
+                   </svg><svg class="header__star" role="img">
+                     <use xlink:href="img/sprite-svg.svg#star-grey"></use>
+                   </svg>
+                   <svg class="header__star header__star--part" viewBox="0 0 11 11" stroke-width="0.6" >
+                     <defs>
+                       <linearGradient id="divider">
+                         <stop offset="0%" stop-color="#909095"/>
+                         <stop offset="40%" stop-color="#909095"/>
+                         <stop offset="40%" stop-color="#ffffff"/>
+                         <stop offset="100%" stop-color="#ffffff"/>
+                       </linearGradient>
+                     </defs>
+                    <path stroke="#909095" fill="url(#divider)" d="M8.363 9.724 7.585 6.46l2.548-2.182-3.344-.269L5.5.911 4.211 4.01l-3.344.269L3.415 6.46l-.778 3.264L5.5 7.975l2.863 1.75Z"></path></svg>`
       },
       {
         title: 'Age',
@@ -40,7 +58,9 @@
       },
       {
         title: 'Developer',
-        content: '!!!devI',
+        content: `<svg class="header__icon" role="img">
+                             <use xlink:href="img/sprite-svg.svg#developer"></use>
+                           </svg>`,
         subtitle: 'Beanstalk Social LLC'
       },
       {
@@ -94,36 +114,42 @@
       {
         title: 'A whole new world',
         rating: 5,
+        isMore: false,
         author: 'Coolcutenperkey',
         text: 'This app opened a world of adventure. Love being able to plan my next adventure'
       },
       {
         title: 'Great idea that helps me explore more!',
         rating: 5,
+        isMore: true,
         author: 'att7979',
         text: `Beanstalk has been great for planning my next activity. I like that they're called "experiences" and they don't all need to be big bucket list items. I'm having a great time exploring restaurants and activities in my backyard`
       },
       {
         title: 'Not like other social media',
         rating: 4,
+        isMore: true,
         author: 'anzeeak',
         text: `I like that Beanstalk gives me the option to keep my experiences private if I so choose. I have an entire board of experiences and goals for my eyes only as I learn new hobbies and focus on my personal wellness`
       },
       {
         title: 'The app helps me to build new community',
         rating: 5,
+        isMore: false,
         author: 'rgxmez',
         text: `I appreciate the community I'm building at Beanstalk. I'm deepening my friendships while "meeting" new people`
       },
       {
         title: 'Great concept, needs work',
         rating: 4,
+        isMore: true,
         author: 'camc99',
         text: `I like trying new things but have had a difficult time finding an app that does a good job of allowing me to invite family and friends to do challenges with me. Beanstalk makes it easy to share "experiences," accept them and build a community around them`
       },
       {
         title: 'So excited',
         rating: 5,
+        isMore: false,
         author: 'Apollo11 air craft crash',
         text: `The app has everything, everytime I open it I'm excited to see the content around me!`
       },
