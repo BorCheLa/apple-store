@@ -1,0 +1,8 @@
+@import "../../utils/import-mixin-and-var-scss";
+
+.version {
+  &__text {
+    color: $color-text-grey;
+    margin-top: 5px;
+  }
+}
