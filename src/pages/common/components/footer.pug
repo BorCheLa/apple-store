@@ -1,3 +1,10 @@
 mixin Footer(data)
-  footer.footer
+  footer
     .wr-section
+      .footer
+        p.footer__copy!=data.copy
+        ul.footer__list
+          each item in data.items
+            li.footer__item
+              a.footer__link(href=item.url)=item.name
+
