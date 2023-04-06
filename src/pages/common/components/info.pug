@@ -1,0 +1,9 @@
+mixin Info(data)
+  section.info
+    .wr-section
+      p.title=data.title
+      ul.info__list
+        each item in data.items
+          li.info__item
+            p.info__name=item.name
+            p.info__value=item.text
