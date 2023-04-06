@@ -65,3 +65,61 @@
     text-align: right;
   }
 }
+.review {
+  padding: 15px 0;
+  &__item {
+    flex-grow: 1;
+    width: 83vw;
+    min-width: 83vw;
+    max-width: 83vw;
+    padding: 14px 20px;
+    background-color: #f2f2f6;
+    border-radius: 8px;
+    & + & {
+      margin-left: 20px;
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  &__stars {
+    display: flex;
+  }
+  &__star {
+    width: 13px;
+    min-width: 13px;
+    height: 13px;
+  }
+  &__title {
+    font-weight: 500;
+  }
+  &__author {
+    color: $color-text-grey;
+  }
+  &__text-wr {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    &.full {
+      height: auto;
+    }
+  }
+  &__text {
+    line-height: 1.4;
+    white-space: pre-line;
+  }
+  &__more {
+    position: absolute;
+    cursor: pointer;
+    padding: 3px 3px 3px 30px;
+    color: $color-text-link;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,#f2f2f6 30%,#f2f2f6 100%);
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}

@@ -1,5 +1,5 @@
 mixin Review(data)
-  section.review
+  section
     .wr-section
       p.title=data.title
       .rating
@@ -17,3 +17,17 @@ mixin Review(data)
                 .rating__line
                     .rating__fill(style='width: ' + item + '%')
           .rating__counter 90 Reviews
+    .review
+      ul.review__list.scroll-h
+        each item in data.reviews
+          li.review__item
+            p.review__title=item.title
+            .review__row
+              .review__stars
+                each star, index in Array(5)
+                  svg.review__star(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11" stroke-width="0.6" fill=item.rating>index?'#ff9500':'transparent' stroke=item.rating<index?'#909095':null)
+                    path(d="M8.363 9.724 7.585 6.46l2.548-2.182-3.344-.269L5.5.911 4.211 4.01l-3.344.269L3.415 6.46l-.778 3.264L5.5 7.975l2.863 1.75Z")
+              p.review__author=item.author
+            .review__text-wr
+              p.review__text!=item.text
+              a.reviewMoreButton.review__more more
