@@ -1,0 +1,17 @@
+mixin Privacy(data)
+  section.privacy
+    .wr-section
+      p.title=data.title
+      p.privacy__text!=data.text
+      .privacy__card
+        svg.privacy__image(role="img")
+          use(xlink:href="img/sprite-svg.svg#" + data.card.icon)
+        p.privacy__title=data.card.title
+        p.privacy__info=data.card.text
+        ul.privacy__list
+          each item in data.card.items
+            li.privacy__item
+              svg.privacy__icon(role="img")
+                use(xlink:href="img/sprite-svg.svg#" + item.icon)
+              p.privacy__point=item.title
+      p.privacy__footer=data.info

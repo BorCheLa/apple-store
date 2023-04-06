@@ -1,0 +1,81 @@
+@import "../../utils/import-mixin-and-var-scss";
+
+.privacy {
+  display: block;
+  &__text {
+    color: $color-text-grey;
+    letter-spacing: .1px;
+    line-height: 20px;
+    margin: 15px 0 25px;
+    strong {
+      font-weight: 600;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 3px 10px 3px rgba(0,0,0,.1);
+    border-radius: 19px;
+    padding: 30px 0 18px;
+    margin: 25px 0;
+  }
+  &__image {
+    width: 40px;
+    height: 40px;
+  }
+  &__title {
+    margin-top: 5px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #10153e;
+  }
+  &__info {
+    font-size: 15px;
+    color: $color-text-grey;
+    letter-spacing: .1px;
+    line-height: 20px;
+    width: 300px;
+    text-align: center;
+    margin: 10px auto 0;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    margin: 20px auto 0;
+  }
+  &__item {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__icon {
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+  &__point {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  &__footer {
+    color: $color-text-grey;
+    letter-spacing: .1px;
+    line-height: 20px;
+    margin: 25px 0;
+  }
+}
